@@ -20,6 +20,7 @@ MY_AUTH_USER = '1'
 // # mm      dqp-muhy-fde
 // # mss     isf-nnjj-joj
 // # dm      nec-ycwt-ymn
+// # dbmslab dqp-muhy-fde 
 
 
 function getDetails(name){
@@ -57,7 +58,7 @@ function getDetails(name){
 
         case 'DBMSLAB':
             courseName = "CSL 333 Database Management System Lab (DBMS Lab)"
-            meetCode = "isf-nnjj-joj"
+            meetCode = "dqp-muhy-fde"
             return [courseName, meetCode]
     }
 }
