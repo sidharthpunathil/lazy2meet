@@ -15,7 +15,7 @@
   },
   "permissions": ["tabs", "history", "bookmarks"],
   "browser_action": {
-    "default_title": "Text that appears when you hover on the extension icon—usually the extension's name",
+    "default_title": "Lazy2Meet",
     "default_popup": "popup.html"
   }
 }
