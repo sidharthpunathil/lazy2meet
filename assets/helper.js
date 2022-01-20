@@ -54,12 +54,20 @@ function getDetails(name){
             courseName = "CST 309 Management of Software Systems (MSS)"
             meetCode = "isf-nnjj-joj"
             return [courseName, meetCode]
+
+        case 'DBMSLAB':
+            courseName = "CSL 333 Database Management System Lab (DBMS Lab)"
+            meetCode = "isf-nnjj-joj"
+            return [courseName, meetCode]
     }
 }
 
 TIME_TABLE = {
     "Monday":['CN', 'SS', 'DM', 'FLAT', 'MM'],
-    "Tuesday":['SS', 'CN', 'FLAT', 'MM', 'MSS']
+    "Tuesday": ['SS', 'CN', 'FLAT', 'MM', "MSS"],
+    "Wednesday":['MM', 'FLAT', 'CN', 'DBMSLAB', 'MSS'],
+    "Thursday":['SS', 'CN', 'MSS', "FLAT", 'MM'],
+    "Friday":['FLAT', 'CN', 'SS', 'MM', 'DM'],
 }
 
 function getTime(v) {
