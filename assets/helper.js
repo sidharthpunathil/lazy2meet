@@ -57,8 +57,6 @@ function getDetails(name){
     }
 }
 
-weekDay = 'Monday'
-
 TIME_TABLE = {
     "Monday":['CN', 'SS', 'DM', 'FLAT', 'MM'],
     "Tuesday":['SS', 'CN', 'FLAT', 'MM', 'MSS']
