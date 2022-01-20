@@ -90,11 +90,6 @@ function getTime(v) {
     }
 }
 
-weekDay = "Wednesday"
-
-subjects = TIME_TABLE[weekDay].length
-console.log(subjects)
-
 function display() {
     for(let i=0; i<5; i++) {
 
