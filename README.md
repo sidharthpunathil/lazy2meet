@@ -1,6 +1,6 @@
 ## lazy2meet 
 
-lazy2meet lets you visualize you timetable and quickly join classes.
+lazy2meet lets you visualize youe timetable and quickly join classes.
 
 ![Extension](./assets/images/lazy2meet.png)
 
