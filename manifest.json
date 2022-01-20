@@ -1,0 +1,21 @@
+{
+  "name": "Lazy2meet",
+  "version": "1.0.0",
+  "description": "Automeet lets you visualize you timetable and quickly join classes.",
+  "manifest_version": 2,
+  "author": "SidharthPunathil",
+  "icons": { 
+    "16": "assets/images/icon16.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
+ },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["tabs", "history", "bookmarks"],
+  "browser_action": {
+    "default_title": "Text that appears when you hover on the extension icon—usually the extension's name",
+    "default_popup": "popup.html"
+  }
+}

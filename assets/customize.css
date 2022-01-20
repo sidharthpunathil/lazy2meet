@@ -1,0 +1,100 @@
+html,
+body {
+  width: 320px; /* width of popup window */
+  height: 320px; /* height of popup window */
+  border-radius: 50px;
+  margin: 20px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  color: royalblue;
+}
+
+.m0p0 {
+  margin: 0;
+  padding: 0;
+}
+
+.full-w {
+  width: 92%;
+  /* margin-right: 20px;
+  padding-right: 20px; */
+}
+
+.text-field {
+  padding: 10px;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  /* border: 2px solid royalblue; */
+  background-color: rgb(233, 233, 233);
+  border: none;
+}
+.time-selector {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  /* border: 2px solid royalblue; */
+  background-color: rgb(233, 233, 233);
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  background-color: royalblue;
+  font-size: 1rem;
+  letter-spacing: -1px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.btn-submit:hover {
+  background-color: green;
+  transform: translateY(-2px);
+  box-shadow: 8px 10px 50px 0px rgba(0, 224, 11, 0.19);
+  transition: 0.3s;
+}
+.btn-submit:hover::after {
+  transition: 0.3s;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.text-field:focus,
+.time-selector:focus {
+  outline: none;
+  background-color: rgb(214, 214, 214);
+}
+
+.helper-text {
+  font-size: 0.8rem;
+}
+
+.everything::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.everything {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
