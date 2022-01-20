@@ -90,13 +90,35 @@ function getTime(v) {
     }
 }
 
+weekDay = "Wednesday"
+
+subjects = TIME_TABLE[weekDay].length
+console.log(subjects)
+
 function display() {
     for(let i=0; i<5; i++) {
-        courseName = getDetails(TIME_TABLE[weekDay][i])[0]
+
+        courseCode = TIME_TABLE[weekDay][i]
+        courseName = getDetails(courseCode)[0]
         meetCode = getDetails(TIME_TABLE[weekDay][i])[1]
         document.getElementById(`class${i}`).innerHTML = `${courseName}`
         document.getElementById(`class${i}tnm`).innerHTML = `${getTime(i)} &nbsp;<b> &middot;</b> &nbsp; ${meetCode}`;
         document.getElementById(`class${i}link`).href=`http://meet.google.com/${meetCode}?pli=1&authuser=${MY_AUTH_USER}`
+        
+        if(courseCode=='DBMSLAB') {
+
+            let clone = document.querySelector('#class3link').cloneNode( true );
+
+            clone.setAttribute( 'id', 'lab-ss' );
+            document.getElementById('class3link').appendChild(clone);
+
+            let lab = document.getElementById('lab-ss');
+            lab.href = `http://meet.google.com/dur-ogbt-zdy?pli=1&authuser=${MY_AUTH_USER}`
+            lab.getElementsByTagName("h3")[0].innerHTML = "CSL 331 System Software And Microprocessors Lab (SS Lab)"
+            lab.getElementsByTagName("p").innerHTML = `${getTime(i)} &nbsp;<b> &middot;</b> &nbsp; dur-ogbt-zdy}`
+
+        }
+
     }
 }
 
