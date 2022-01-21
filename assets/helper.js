@@ -9,6 +9,22 @@ function getToday() {
 
     return day
 }
+// function myFunction() {
+//     var element = document.getElementById("container")
+//     element.classList.toggle("dark-mode");
+// }
+const chk = document.getElementById('chk');
+var header = document.getElementById("header-area")
+var body=document.getElementById("body")
+var html = document.getElementById("html")
+
+chk.addEventListener('change', () => {
+	header.classList.toggle('dark');
+	body.classList.toggle('dark');
+	html.classList.toggle('dark');
+
+
+});
 
 let weekDay = getToday();
 

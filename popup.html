@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
     <head>
       <!-- Import Inter font -->
       <link
@@ -9,14 +9,23 @@
 
       <link rel="stylesheet" href="assets/style.css" />
     </head>
-    <body>
-      <section class="everything">
-        <div class="container">
-          <div class="header-area">
-
+    <body id="body">
+      <section class="everything",id="everything">
+        <div class="container" id="container">
+          <div class="header-area" id="header-area">
+            <div>
             <h1 class="logo m0p0" style="font-weight: bold">lazy2meet</h1>
             <h2  id="today" class="upcoming" style="margin-top: 2px"></h2>
-          
+            </div>
+            
+            <!-- Rounded switch -->
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+  
           </div>
           <section class="schedule" style="margin-top: 80px">
             
@@ -51,7 +60,7 @@
               <p id="class3tnm"class="py-0 my-0"></p>
             </div>
             </a>
-            
+
             <!-- 5th Period -->
             <a id="class4link" href="" target="_blank">
             <div class="schedule-item">
