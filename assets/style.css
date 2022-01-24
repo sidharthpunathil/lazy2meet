@@ -1,16 +1,14 @@
-html,
-body {
+html{
   width: 320px; /* width of popup window */
-  border-radius: 50px;
-
-  background-color: transparent !important;
+  /* border-radius: 50px; */
+  background-color: white;
 }
-
 body {
+  width: 320px;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: transparent;
+  background-color: white;
 }
 
 .schedule {
@@ -142,6 +140,9 @@ body {
   box-shadow: 8px 10px 50px 0px rgba(145, 145, 145, 0.19);
   padding-left: 20px;
   padding-bottom: 5px;
+  display:flex;
+  justify-content:space-between;
+  
 }
 
 /* .schedule-item:hover {
@@ -149,6 +150,7 @@ body {
   color: #fff;
   transition: 0.2s;
 } */
+/
 .container {
   /* display: flex;
   flex-direction: column;
@@ -260,4 +262,154 @@ button, input[type="submit"], input[type="reset"] {
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+}
+
+/* dark mode */
+
+
+.dark-mode {
+  background-color: black;
+  color: royalblue;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(177, 176, 176);
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  /* background-color: red; */
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* from wev dark mode */
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+/* body {
+	background-color: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+} */
+
+.dark {
+	background-color: black;
+  color:royalblue;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+  
+
+}
+
+.label {
+	background-color: rgb(211, 211, 211);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
 }
